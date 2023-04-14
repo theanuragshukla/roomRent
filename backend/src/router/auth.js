@@ -1,4 +1,4 @@
-gonst jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 const express = require("express");
 const cors = require("cors");
 const router = express.Router();
