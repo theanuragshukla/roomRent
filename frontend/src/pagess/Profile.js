@@ -37,15 +37,12 @@ const Profile = () => {
   const calltheroom = async () => {
     try {
       setLoading(true);
-      const getroom = await fetch(
-        "https://roomrenderbackend.onrender.com/api",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const getroom = await fetch("https://room-rent-server.onrender.com/api", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       const getroomdata = await getroom.json();
       if (!getroom.status === 200) {
         const error = new Error(getroomdata.error);
