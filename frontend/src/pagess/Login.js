@@ -8,7 +8,7 @@ const Login = () => {
 
   const loginUser = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://room-rent-server.onrender.com/signin", {
+    const res = await fetch("https://room-rent-server.onrender.com/signin", {
       method: "POST",
       credentials: "include",
       headers: {
