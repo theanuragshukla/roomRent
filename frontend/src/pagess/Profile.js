@@ -60,10 +60,10 @@ const Profile = () => {
 
   useEffect(() => {
     document.title = `${userData.name}`;
-    callprofilePage();
   });
   useEffect(() => {
     calltheroom();
+    callprofilePage();
   }, []);
   return (
     <>
