@@ -9,7 +9,7 @@ const Profile = () => {
   const [userroom, setUserroom] = useState([]);
   const callprofilePage = async () => {
     try {
-      const res = await fetch("http://localhost:7000/profile", {
+      const res = await fetch("http://room-rent-server.onrender.com/profile", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -147,4 +147,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
